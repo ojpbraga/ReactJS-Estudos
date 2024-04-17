@@ -1,0 +1,32 @@
+// Bundler
+// Agrupa (bundle) o código do aplicativo
+
+// Permite definirmos os componentes em diferentes arquivos para melhor organização
+
+// Facilita a importação de código externo instalado via NPM
+
+// ESBuild, Rolloup, Parcel, Turbopack, Webpack
+
+
+// Transpiler
+// Transforma JSX return <div></div> em funções de React React.createElement()
+
+// Transforma JavaScript novo const em JS antigo var
+
+// Babel, SWC, ESBuild
+
+
+Iniciando pacotem (NPM)
+npm init -y (dá sim para todas as perguntas)
+
+Após a div#root e script/main.js terem sidos criados
+npm install esbuild
+Add: "scripts": {
+  "start": "esbuild --bundle src/main.jsx --outfile=main.js --servedir=./ --watch",
+  "build": "esbuild --bundle src/main.jsx --outfile=main.js"
+},
+no package.json
+
+React
+npm install react react-dom
+
