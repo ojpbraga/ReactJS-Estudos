@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       App React
+      <button>Adicionar</button>
     </div>
   )
 }
