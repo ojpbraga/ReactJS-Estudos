@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import { Button, ButtonReact } from './aula-jsx'
+import { useState } from 'react';
+import { Button, ButtonReact } from './aula-jsx';
+import { Exercicios } from './exercicios';
 
 const titulo = <h1>Esse é um título</h1>;
 
@@ -75,6 +76,8 @@ function App() {
       */}
       <h1 style={styleH1}>Exexplo</h1>
       <p style={{ color: 'green' }}>Parágrafos são parágrafos</p>
+
+      <Exercicios/>
 
     </div>
   );

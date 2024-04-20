@@ -12,13 +12,4 @@ const ButtonReact = () => {
     return React.createElement('button', null, 'Comprar');
 };
 
-
-
-
-
-
-
-
-
-
 export {Button, ButtonReact};
