@@ -1,4 +1,5 @@
 import { ChangeEvent, EventHandler, FormEventHandler, useState } from "react"
+import Exercise from "./Exercise";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
   // Multiplos Campos
   // Podemos definir um estado para cada campo.
 
-  const [email, setEmail] = useState<string>();
+  const [email, setEmail] = useState<string>("");
 
   // Objeto
   // Podemos definir um objeto que irá conter todos os valores dos campos do formulário.
@@ -37,30 +38,35 @@ function App() {
   }
 
   return (
-    <form onSubmit={(event) => handleSubmit(event)}>
-      <label htmlFor="name">Name</label>
-      <input type="text" id="name" value={name} onChange={(event) => setName(event.target.value)} />
+    <div>
+      <form onSubmit={(event) => handleSubmit(event)}>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" value={name} onChange={(event) => setName(event.target.value)} />
 
-      <label htmlFor="email">Email</label>
-      <input type="email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
 
-      <label htmlFor="street">Street</label>
-      <input type="text" id="street" value={form.street} onChange={handleSubmitObject} />
+        <label htmlFor="street">Street</label>
+        <input type="text" id="street" value={form.street} onChange={handleSubmitObject} />
 
-      <label htmlFor="number">Number</label>
-      <input type="number" id="number" value={form.number} onChange={handleSubmitObject} />
+        <label htmlFor="number">Number</label>
+        <input type="number" id="number" value={form.number} onChange={handleSubmitObject} />
 
-      <button>Send</button>
+        <button>Send</button>
 
-      <br/>
-      {name}
-      <br/>
-      {email}
-      <br/>
-      {form.street}
-      <br/>
-      {form.number}
-    </form>
+        <br/>
+        {name}
+        <br/>
+        {email}
+        <br/>
+        {form.street}
+        <br/>
+        {form.number}
+      </form>
+
+      <Exercise/>
+
+    </div>
   )
 }
 
