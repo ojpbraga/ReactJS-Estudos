@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Exercise from "./Exercise";
 
 function App() {
 
@@ -63,6 +64,8 @@ function App() {
           Red
         </label>
       </form>
+
+      <Exercise/>
 
     </>
   )
