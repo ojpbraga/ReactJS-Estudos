@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Input from "./components/Input";
+import Select from "./components/Select";
 
 function App() {
   // Input
   // Podemos definir um componente para cada tipo de campo de formulário, assim evitamos criar código repetido.
   const [email, setEmail] = useState();
+
+  const [product, setProduct] = useState(""); // Iniciando com "" p/ o select estar selecionado
 
   return (
     <>
@@ -24,7 +27,16 @@ function App() {
           id="password"
         />
         
+        <Select 
+          options={['smartphone', 'notebook']}
+          value={product}
+          setValue={setProduct}
+        />
+        <p>Selected: {product.charAt(0).toUpperCase() + product.slice(1)}</p>
+
       </form>
+
+      
     </>
   )
 }
