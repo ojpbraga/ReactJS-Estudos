@@ -1,0 +1,30 @@
+.titulo {
+    color: #43c;
+}
+
+.button {
+    background: white;
+    color: #000;
+    font-weight: peso;
+    color: color;
+}
+
+/* Funcionalidades Extras */
+
+/* Variável */
+@value peso: bold;
+@value color: red;
+
+/* Composes */
+.colorOne {
+    color: red;
+}
+
+.colorTwo {
+    composes: colorOne;
+}
+
+/* Variável global, posso utilizar em qualquer elemento */
+:global .container {
+    max-width: 900px;
+}

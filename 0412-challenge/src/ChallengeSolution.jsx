@@ -78,9 +78,8 @@ function ChallengeSolution() {
     }
 
     function validate() {
-        console.log("Oi")
-        const corretas = perguntas.filter(({id, resposta}) => respostas[id] === resposta);
-        setResultado(`Você acertou: ${corretas.length} de ${perguntas.length}`)
+      const corretas = perguntas.filter(({id, resposta}) => respostas[id] === resposta);
+      setResultado(`Você acertou: ${corretas.length} de ${perguntas.length}`)
     }
 
     function handleClick() {
