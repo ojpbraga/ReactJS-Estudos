@@ -33,12 +33,12 @@ export default function OneReboot() {
 
             <h2>Exercise</h2>
             {produtosDisponiveis.filter(product => Number(product.preco.replace("R$ ", "") > 1500)).map(({nome, preco, id,cores}) => 
-                <div id={id}>
+                <div key={id}>
                     <h3>{nome}</h3>
                     <p>{preco}</p>
                     <ul>
-                        {cores.map(color => 
-                            <li id={id+"_color"} style={{background:color, color:"white", margin:"8px 0"}}>{color}</li>
+                        {cores.map((color, index) => 
+                            <li key={id+"_color_"+index} style={{background:color, color:"white", margin:"8px 0"}}>{color}</li>
                         )}
                     </ul>
                 </div>
