@@ -1,6 +1,7 @@
 import Components from "./classes/Components"
 import Events from "./classes/Events"
 import OneReboot from "./classes/oneReboot"
+import Props from "./classes/Props";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <OneReboot/>
       <Events/>
       <Components/>
+      <Props title="Pros"/>
     </>
   )
 }
