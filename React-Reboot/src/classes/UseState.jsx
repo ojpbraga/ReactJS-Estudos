@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UseStateChallenge from "./UseStateChallenge";
 
 const Modal = ({modal, setModal}) => {
     if (modal) {
@@ -63,6 +64,7 @@ function UseState() {
             <button onClick={handleClick}>{active?'Active':'Inactive'}</button>
             <p>{data.name} - {data.age}</p>
             <Modal modal={modal} setModal={setModal}/>
+            <UseStateChallenge/>
         </section>
     )
 }
