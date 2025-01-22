@@ -4,6 +4,7 @@ import Events from "./classes/Events"
 import OneReboot from "./classes/oneReboot"
 import Props from "./classes/Props";
 import UseEffect from "./classes/UseEffect";
+import UseRef from "./classes/UseRef";
 import UseState from "./classes/UseState";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Challenge_01/>
       <UseState/>
       <UseEffect/>
+      <UseRef/>
     </>
   )
 }
