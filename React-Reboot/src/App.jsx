@@ -3,6 +3,7 @@ import Components from "./classes/Components"
 import Events from "./classes/Events"
 import OneReboot from "./classes/oneReboot"
 import Props from "./classes/Props";
+import UseEffect from "./classes/UseEffect";
 import UseState from "./classes/UseState";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Props title="Pros"/>
       <Challenge_01/>
       <UseState/>
+      <UseEffect/>
     </>
   )
 }

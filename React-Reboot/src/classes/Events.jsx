@@ -5,7 +5,7 @@ export default function Events() {
 
     // Eventos windows/document são adicionados normalmente. Deve ser usado o useEffect
     function handleScroll(event) {
-        console.log(event)
+        // console.log(event)
     };
     window.addEventListener('scroll', handleScroll);
 
