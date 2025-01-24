@@ -6,6 +6,8 @@ import Props from "./classes/Props";
 import UseEffect from "./classes/UseEffect";
 import UseRef from "./classes/UseRef";
 import UseState from "./classes/UseState";
+import UseMemo from "./classes/UseMemo";
+
 
 function App() {
 
@@ -28,6 +30,7 @@ function App() {
       <UseState/>
       <UseEffect/>
       <UseRef/>
+      <UseMemo/>
     </>
   )
 }
