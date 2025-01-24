@@ -7,6 +7,7 @@ import UseEffect from "./classes/UseEffect";
 import UseRef from "./classes/UseRef";
 import UseState from "./classes/UseState";
 import UseMemo from "./classes/UseMemo";
+import UseCallback from "./classes/UseCallback";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <UseEffect/>
       <UseRef/>
       <UseMemo/>
+      <UseCallback/>
     </>
   )
 }

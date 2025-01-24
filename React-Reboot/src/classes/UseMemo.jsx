@@ -32,6 +32,7 @@ const UseMemo = () => {
 
     return (
         <section>
+            <h1>UseMemo</h1>
             <button onClick={() => setCount(count+1)}>Operation</button>
         </section>
     )
