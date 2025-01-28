@@ -8,6 +8,7 @@ import UseRef from "./classes/UseRef";
 import UseState from "./classes/UseState";
 import UseMemo from "./classes/UseMemo";
 import UseCallback from "./classes/UseCallback";
+import CreateContext from "./classes/CreateContext";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <UseRef/>
       <UseMemo/>
       <UseCallback/>
+      <CreateContext/>
     </>
   )
 }
