@@ -1,4 +1,5 @@
 import { Children, createContext, useContext, useState } from "react";
+import CreateContextChallenge from "./CreateContextChallenge";
 
 // Lembrando: isso é um componente, é aqui que o contexto é criado
 export const UserContext = createContext();
@@ -71,6 +72,7 @@ const CreateContext = () => {
                 {/* Product também tem acesso ao context */}
                 <Product/>
             </section>
+            <CreateContextChallenge/>
         </UserContext.Provider>
     )
 };
