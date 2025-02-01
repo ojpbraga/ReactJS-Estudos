@@ -10,6 +10,7 @@ import UseMemo from "./classes/UseMemo";
 import UseCallback from "./classes/UseCallback";
 import CreateContext from "./classes/CreateContext";
 import CustomHook from "./classes/CustomHook";
+import Form from "./classes/form_classes/Form";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <UseCallback/>
       <CreateContext/>
       <CustomHook/>
+      <Form/>
     </>
   )
 }
