@@ -1,4 +1,5 @@
 import Input from "./Input";
+import Textarea from "./Textarea";
 
 const Form = () => {
 
@@ -6,6 +7,7 @@ const Form = () => {
         <div>
             <h1>Formulários</h1>
             <Input/>
+            <Textarea/>
         </div>
     )
 }
